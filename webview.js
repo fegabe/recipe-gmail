@@ -1,13 +1,11 @@
-import path from 'path';
+const path = require('path');
 
 module.exports = (Franz) => {
   const getMessages = function getMessages() {
     let count = 0;
 
-    if (document.getElementsByClassName('J-Ke n0').length > 0) {
-      if (document.getElementsByClassName('J-Ke n0')[0].getAttribute('aria-label') != null) {
-        count = parseInt(document.getElementsByClassName('J-Ke n0')[0].getAttribute('aria-label').replace(/[^0-9.]/g, ''), 10);
-      }
+    if (document.getElementsByClassName('bsU').length > 0) {
+      count = parseInt(document.getElementsByClassName('bsU')[0].innerText, 10);
     }
 
     // Just incase we don't end up with a number, set it back to zero (parseInt can return NaN)

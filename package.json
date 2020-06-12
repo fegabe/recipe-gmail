@@ -1,8 +1,8 @@
 {
-  "id": "gmail",
+  "id": "inbox-gmail",
   "name": "Gmail",
-  "version": "1.2.0",
-  "description": "Gmail",
+  "version": "1.2.1",
+  "description": "Gmail recipe that shows Inbox badge count",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
   "license": "MIT",
