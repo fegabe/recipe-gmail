@@ -4,8 +4,9 @@ module.exports = (Franz) => {
   const getMessages = function getMessages() {
     let count = 0;
 
-    if (document.getElementsByClassName('bsU').length > 0) {
-      count = parseInt(document.getElementsByClassName('bsU')[0].innerText, 10);
+    let inboxNode = document.getElementsByClassName('nU')[0].parentElement.getElementsByClassName("bsU");
+    if (inboxNode.length > 0) {
+      count = inboxNode[0].innerText;
     }
 
     // Just incase we don't end up with a number, set it back to zero (parseInt can return NaN)
